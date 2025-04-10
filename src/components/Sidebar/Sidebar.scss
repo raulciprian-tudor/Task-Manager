@@ -1,0 +1,32 @@
+.open-sidebar-button:hover {
+  background-color: #f2efed !important;
+}
+
+.col-auto {
+  background: #fcfaf8;
+}
+
+.list-group {
+  #add-task {
+    color: #a81f00 !important;
+  }
+  #add-task:hover {
+    background-color: #f2efed !important;
+  }
+  #add-task:active {
+    transform: scale(0.95);
+    transition: all 0.1s ease-in-out;
+  }
+
+  .list-group-item {
+    color: #202020 !important;
+  }
+  .list-group-item:hover {
+    cursor: pointer;
+    background-color: #f2efed !important;
+  }
+  .list-group-item:active {
+    background-color: #ffefe5 !important;
+    color: #a81f00 !important;
+  }
+}
