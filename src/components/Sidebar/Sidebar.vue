@@ -9,18 +9,24 @@
                     </button>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item mx-2 rounded p-1 py-2 border-0 bg-transparent" id="add-task">
-                        <font-awesome-icon icon="plus" class="mx-2" />Add Task</li>
-                    <li class="list-group-item mx-2 rounded p-1 py-2 border-0 bg-transparent">
-                        <font-awesome-icon icon="search" class="mx-2" />Search</li>
-                    <li class="list-group-item mx-2 rounded p-1 py-2 border-0 bg-transparent">
-                        <font-awesome-icon icon="inbox" class="mx-2" />Inbox</li>
-                    <li class="list-group-item mx-2 rounded p-1 py-2 border-0 bg-transparent">
-                        <font-awesome-icon icon="calendar-day" class="mx-2" />Today</li>
-                    <li class="list-group-item mx-2 rounded p-1 py-2 border-0 bg-transparent">
-                        <font-awesome-icon icon="arrow-down-z-a" class="mx-2" />Filters & Labels</li>
-                    <li class="list-group-item mx-2 rounded p-1 py-2 border-0 bg-transparent">
-                        <font-awesome-icon icon="circle-check" class="mx-2" />Completed</li>
+                    <li class="list-group-item mx-2 rounded p-1 py-2 border-0 bg-transparent" id="add-task" @click.prevent="$emit('open-modal')">
+                        <font-awesome-icon icon="plus" class="mx-2" />Add Task
+                    </li>
+                    <RouterLink class="list-group-item mx-2 rounded p-1 py-2 border-0 bg-transparent text-decoration-none" to="/search" id="inbox">
+                        <font-awesome-icon icon="search" class="mx-2" />Search
+                    </RouterLink>
+                    <RouterLink class="list-group-item mx-2 rounded p-1 py-2 border-0 bg-transparent text-decoration-none" to="/inbox" id="inbox">
+                        <font-awesome-icon icon="inbox" class="mx-2" />Inbox
+                    </RouterLink>
+                    <RouterLink class="list-group-item mx-2 rounded p-1 py-2 border-0 bg-transparent text-decoration-none" to="/today" id="inbox">
+                        <font-awesome-icon icon="calendar-day" class="mx-2" />Today
+                    </RouterLink>
+                    <RouterLink class="list-group-item mx-2 rounded p-1 py-2 border-0 bg-transparent text-decoration-none" to="/filters&labels" id="inbox">
+                        <font-awesome-icon icon="arrow-down-z-a" class="mx-2" />Filters & Labels
+                    </RouterLink>
+                    <RouterLink class="list-group-item mx-2 rounded p-1 py-2 border-0 bg-transparent text-decoration-none" to="/completed" id="inbox">
+                        <font-awesome-icon icon="circle-check" class="mx-2" />Completed
+                    </RouterLink>
                 </ul>
             </div>
         </div>
